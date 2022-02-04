@@ -1,0 +1,8 @@
+<div *ngFor="let student of (students | async).students">
+    <h1>{{student.name}}</h1> 
+    <h1>{{student.age}}</h1> 
+</div>
+<button (click)="addStudent()">Add Student</button>
+<button (click)="addStudents()">Add Students</button>
+<button (click)="updateStudent()">Update Student</button>
+<button (click)="deleteStudent()">Delete Student</button>
